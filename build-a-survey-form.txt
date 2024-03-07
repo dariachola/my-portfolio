@@ -1,0 +1,133 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Survey Form</title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id='title' class='title'>Survey Form</h1>
+      <p id='description'><em>Please fill out this form with required information. Thank you for your time!</em></p>
+      <form method='POST' action='www.freeCodeCamp.com' id='survey-form'>
+        <fieldset>
+          <legend><strong><h2 id='personal-data' class='personal-data'>Personal data</strong></h2></legend>
+             <label for='name' id='name-label'>Enter your full name:</label>
+<input id='name' type='text' placeholder='e.g John Smith' required ><br>
+             <label for='email' id='email-label'>Enter your e-mail:</label>
+<input id='email' type='email' placeholder='example@email.com' required><br>
+<label for='number' id='number-label'>Select the year you were born:</label>
+<input id='number' type='number' min='1920' max='2006' placeholder='e.g. 1996'><br>
+          </fieldset>
+           <fieldset>
+             <legend><strong><h2 id='questionaire' class='questionaire'>Questionaire</strong></h2></legend>
+                          <legend>Which option best describes your current role?</legend>
+            <label><input type='radio' value='Student' name='current-role' class='input-radio' checked> Student</input></label>
+            <label><input type='radio' value='full-time-job' name='current-role' class='input-radio'> Full-time job</input></label> 
+            <label><input type='radio' value='part-time-job' name='current-role' class='input-radio'> Part-time job</input></label>
+            <label><input type='radio' value='unemployed' name='current-role' class='input-radio'> Unemployed</input></label>
+            <legend>What is your current salary?</legend>
+            <select id='dropdown' name='income' required>
+              <option disabled selected value>Select current salary</option>
+              <option>Prefer not to say</option>
+              <option>£10,000 - £20,000</option>
+<option>£20,001 - £30,000 </option>
+<option>£30,001 - £50,000</option>
+<option>£50,001 - £100,000</option>
+<option>More than £100,001</option>
+            </select>
+             <legend>Please select all the programming languages you know</legend>
+             <div class='checkbox'><input type='checkbox' name='language' value='html-and-css' class='input-checkbox'> HTML and CSS</input>
+             <input type='checkbox' name='language' value='javascript' class='input-checkbox'> JavaScript</input>
+             <input type='checkbox' name='language' value='python' class='input-checkbox'> Python</input>
+             <input type='checkbox' name='language' value='sql' class='input-checkbox'> SQL</input>
+             <input type='checkbox' name='language' value='java' class='input-checkbox'> Java</input>
+             <input type='checkbox' name='language' value='c++' class='input-checkbox'> C++</input>
+             <input type='checkbox' name='language' value='swift' class='input-checkbox'> Swift</input></div>
+             <legend>Tell us something about youself</legend><textarea id='fun-fact' class='input-textarea' name='fun-fact' name='fun-fact' placeholder='My hobby is...'></textarea>
+          </fieldset>
+          <button id ='submit' type='submit' value='Submit' class='submit-button'> Submit</button>
+      </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-color: rgb(184, 128, 244);
+  text-align: center;
+font-size: 22px;
+}
+
+#title{
+  color: pink;
+  font-family: courier;
+  font-size: 67px;
+}
+
+#personal-data{
+  color: pink;
+  font-size:30px;
+  margin: auto;
+}
+#questionaire{
+   color:pink;
+  font-size:30px;
+  margin: auto;
+}
+label{
+  display: block;
+  margin: 0.4rem 0;
+}
+
+legend{
+  color: white;
+  font-family: courier;
+  font-size: 27px;
+  text-align: center; 
+  margin: 0.4rem 0;
+  font-weight: bold;
+}
+select{
+  width: 50%;
+  height: 2.37rem;
+  font-size: 15px;
+}
+
+button {
+  width: 50%;
+  height:2rem;
+  background-color: rgb(251, 140, 158);
+font-weight: bold;
+font-size: 20px;
+color: white;
+border-width: 1px;
+border-color: white;
+}
+
+button:hover{
+  background-color: rgb(251, 152, 169);
+  cursor: pointer;
+}
+button:active{
+  background-color:rgb(249, 172, 185);
+}
+.checkbox{
+  display: block;
+align-items: center;
+  cursor: pointer;
+}
+
+.input-textarea{
+  min-height: 120px;
+  width: 50%;
+  font-size: 18px;
+  padding: 3px;
+  
+}
+
+** end of undefined **
+
